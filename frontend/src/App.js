@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import api from './connection';
 import './App.css';
 
@@ -6,14 +7,17 @@ import logo from './assets/logo.svg';
 
 function App() {
   const [email, setEmail] = useState('');
+  const history = useHistory();
   async function handleLogin(e) {
     e.preventDefault();
     try {
-      const newUser = await api.post('/sessions', email);
-      //localStorage('user_id', newUser.data._id);
-      console.log(newUser);
+      const response = await api.post('/sessions', { email });
+      const { message } = response.data;
+      const { _id } = message;
+      localStorage.setItem('user', _id);
+      history.push('/dashboard');
     } catch (error) {
-      console.log('Erro ao realizar get em /session: ' + error);
+      console.log('Erro ao realizar post em /sessions: ' + error);
     }
   }
 
