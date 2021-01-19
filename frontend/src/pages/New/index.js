@@ -1,19 +1,33 @@
 import React, { useState, useMemo } from 'react';
+import api from '../../connection';
 import camera from '../../assets/camera.svg';
 import './style.css';
 
-export default function New() {
+export default function New({ history }) {
   const [company, setCompany] = useState('');
   const [price, setPrice] = useState('');
   const [techs, setTechs] = useState('');
   const [thumbnail, setThumbnail] = useState(null);
+  const data = new FormData();
+  const user_id = localStorage.getItem('user');
 
   const preview = useMemo(() => {
     return thumbnail ? URL.createObjectURL(thumbnail) : null;
   }, [thumbnail]);
 
-  function handleSubmit() {
-    console.log(company + ' ' + price + ' ' + thumbnail);
+  async function handleSubmit(e) {
+    e.preventDefault();
+    data.append('thumbnail', thumbnail);
+    data.append('company', company);
+    data.append('techs', techs);
+    data.append('price', price);
+
+    console.log(data);
+
+    await api.post('/spots', data, {
+      headers: { user_id },
+    });
+    history.push('/dashboard');
   }
 
   return (
