@@ -19,7 +19,11 @@ export default function New() {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <label id="thumbnail" style={{ backgroundImage: `url(${preview})` }}>
+        <label
+          id="thumbnail"
+          style={{ backgroundImage: `url(${preview})` }}
+          className={thumbnail ? 'has-thumbnail' : ''}
+        >
           <input
             type="file"
             onChange={(e) => {
