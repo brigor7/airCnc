@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import camera from '../../assets/camera.svg';
 import './style.css';
 
@@ -6,7 +6,11 @@ export default function New() {
   const [company, setCompany] = useState('');
   const [price, setPrice] = useState('');
   const [techs, setTechs] = useState('');
-  const [thumbnail, setThumbnail] = useState(0);
+  const [thumbnail, setThumbnail] = useState(null);
+
+  const preview = useMemo(() => {
+    return thumbnail ? URL.createObjectURL(thumbnail) : null;
+  }, [thumbnail]);
 
   function handleSubmit() {
     console.log(company + ' ' + price + ' ' + thumbnail);
@@ -15,8 +19,13 @@ export default function New() {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <label id="thumbnail">
-          <input type="file" />
+        <label id="thumbnail" style={{ backgroundImage: `url(${preview})` }}>
+          <input
+            type="file"
+            onChange={(e) => {
+              setThumbnail(e.target.files[0]);
+            }}
+          />
           <img src={camera} alt="Selecione sua imagem" />
         </label>
         <label htmlFor="company">Empresa *</label>
@@ -52,16 +61,7 @@ export default function New() {
             setPrice(e.target.value);
           }}
         />
-        <label htmlFor="thumbnail">Avatar *</label>
-        <input
-          id="thumbnail"
-          placeholder="Sua imagem"
-          type="text"
-          value={thumbnail}
-          onChange={(e) => {
-            setThumbnail(e.target.value);
-          }}
-        />
+
         <button className="btn" type="submit">
           Cadastrar
         </button>
