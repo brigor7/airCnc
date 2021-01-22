@@ -26,11 +26,13 @@ A implementação deste projeto faz parte da Semana Omnistack 9, da [RocketSeat]
 
 ## :collision: Funcionalidades
 
+- Criação e acesso a endpoints;
+- Acesso e gravação de dados em base de dados;
 - Criação/destruição de sessao;
-- Cadastro de spot
-- Realização de agendamento
-- Dashboard
-- Upload de imagem
+- Cadastro de spot;
+- Realização de agendamento;
+- Dashboard;
+- Upload de imagem;
 
 ## :rocket: Tecnologias
 
