@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+<h1 align="center">
+    <img alt="AirCnc Frontend" title="#delicinha" src="https://github.com/brigor7/airCnc/blob/master/logo.png" width="150px" />
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="#rocket-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#collision-funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#zap-rodando-o-projeto">Rodando o Projeto</a>
+</p>
 
-## Available Scripts
+<h2>
+<strong>Frontend</strong> AirCnc.
+</h2>
 
-In the project directory, you can run:
+## 🚀 Sobre a aplicação
 
-### `yarn start`
+A versão frontend do projeto AirCnc implementa as telas para o usuário, permitindo que este realizem o cadastro de suas informações para uso de um spot que esteja disponível.
+A implementação deste projeto faz parte da Semana Omnistack 9, da [RocketSeat](https://rocketseat.com.br/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## :collision: Funcionalidades
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Login;
+- Cadastro de usuário;
+- Dashboard
 
-### `yarn test`
+## 🎨 Layout
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+<img alt="Screenshot tela inicial" title="#telaInicial" src="https://github.com/brigor7/airCnc/blob/master/frontend/public/screenshot.png" width="400px" />
+```
 
-### `yarn build`
+## :rocket: Tecnologias
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+- [Javascrtipt](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [React](https://reactjs.org/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+\* Para mais detalhes, veja o <kbd>[package.json](./package.json)</kbd>
 
-### `yarn eject`
+## :zap: Rodando o projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Pré-requisitos
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1 - É necessário que o **/backend** da aplicação esteja rodando no endereço http://localhost:3333
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+# Em um terminal, entrar na raiz do projeto **/frontend** e rodar o comando:
+$ yarn install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Execute a aplicação
+$ yarn start
 
-## Learn More
+# No navegador, execute o aplicativo no modo de desenvolvimento. \
+[http: // localhost: 3000] (http: // localhost: 3000)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
