@@ -18,10 +18,11 @@
 O projeto AirCnc tem por objetivo ligar empresas com seus spots desocupados a desenvolvedores que precisam desses espaços para realização de seu trabalho, onde um tem acesso ao espaço de outro.
 Esta aplicação é implementada em 3 camadas:
 
-- Backend: Responsável por implementar os endpoints e prover acesso e gravação das informações
-- Frontend: Responsavel por disponibilizar as informações ao usuário, através de telas e funcionalidades, onde esse pode gerir os seus dados na aplicação.
+- Backend: Responsável por implementar os endpoints e prover acesso e gravação de informações.
+- Frontend: Responsável por disponibilizar as informações ao usuário, através de telas e funcionalidades, onde esse pode gerir os seus dados na aplicação.
 - Mobile: Assim como o frontend, é responsável por disponibilizar funcionalidades e dados, em dispositivos móveis, onde o usuário pode gerir suas informações.
-  A implementação deste projeto faz parte da Semana Omnistack 9, da [RocketSeat](https://rocketseat.com.br/).
+
+A implementação deste projeto faz parte da Semana Omnistack 9, da [RocketSeat](https://rocketseat.com.br/).
 
 ## :collision: Funcionalidades
 
