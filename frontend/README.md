@@ -54,8 +54,8 @@ $ yarn start
 
 ```
 
-# No navegador, execute o aplicativo no modo de desenvolvimento. \
+### No navegador, execute o aplicativo no modo de desenvolvimento. \
 
-[http: // localhost: 3000] (http: // localhost: 3000)
+http://localhost:3000
 
 ---
