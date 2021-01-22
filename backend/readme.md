@@ -41,9 +41,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ### Pré-requisitos
 
-1 - É necessário que o **/backend** da aplicação esteja rodando no endereço http://localhost:3333
-
 ```bash
+
 # Em um terminal, entrar na raiz do projeto **/backend** e rodar o comando:
 $ yarn install
 
