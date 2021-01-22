@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="AirCnc" title="#delicinha" src="../.github/src/assets/logo.png" width="250px" />
+    <img alt="AirCnc" title="#delicinha" src="https://github.com/brigor7/airCnc/blob/master/logo.png" width="250px" />
 </h1>
 
 <p align="center">
