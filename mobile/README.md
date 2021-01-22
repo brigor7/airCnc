@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="AirCnc" title="#delicinha" src="https://github.com/brigor7/airCnc/blob/master/logo.png" width="250px" />
+    <img alt="AirCnc Mobile" title="#delicinha" src="https://github.com/brigor7/airCnc/blob/master/logo.png" width="150px" />
 </h1>
 
 <p align="center">
@@ -17,6 +17,7 @@
 ## 🚀 Sobre a aplicação
 
 A versão mobile do projeto AirCnc tem por objetivo ligar empresas com spots desocupados e desenvolvedores. Permite que aquelas disponibilizarem seus espaços ociosos para que estes utilizem nas suas tarefas de desenvolvimento.
+A implementação deste projeto faz parte da Semana Omnistack 9, da [RocketSeat](https://rocketseat.com.br/).
 
 ## :collision: Funcionalidades
 
