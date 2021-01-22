@@ -27,9 +27,7 @@ A implementação deste projeto faz parte da Semana Omnistack 9, da [RocketSeat]
 
 ## 🎨 Layout
 
-```
 <img alt="Screenshot tela inicial" title="#telaInicial" src="https://github.com/brigor7/airCnc/blob/master/frontend/public/screenshot.png" width="400px" />
-```
 
 ## :rocket: Tecnologias
 
@@ -54,9 +52,10 @@ $ yarn install
 # Execute a aplicação
 $ yarn start
 
-# No navegador, execute o aplicativo no modo de desenvolvimento. \
-[http: // localhost: 3000] (http: // localhost: 3000)
-
 ```
+
+# No navegador, execute o aplicativo no modo de desenvolvimento. \
+
+[http: // localhost: 3000] (http: // localhost: 3000)
 
 ---
