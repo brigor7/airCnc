@@ -34,12 +34,7 @@ export default function List({ navigation }) {
       <Image style={styles.logo} source={logo} />
       <ScrollView>
         {techs.map((tech) => (
-          <Spotlist
-            tech={tech}
-            key={() => {
-              let i = i + 1;
-            }}
-          />
+          <Spotlist tech={tech} key={() => tech.id} />
         ))}
       </ScrollView>
     </SafeAreaView>
