@@ -15,4 +15,8 @@ module.exports = {
 
     return res.json(booking);
   },
+  async show(_, res) {
+    const booking = await booking.find();
+    return res.status(200).json({ message: booking });
+  },
 };
