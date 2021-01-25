@@ -39,6 +39,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## :zap: Rodando o projeto
 
+### Insomnia
+
+[![Export para Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=AirCnc%20API&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fbrigor7%2FairCnc%2Fmaster%2Fbackend%2Fsrc%2Fassets%2FInsomnia_AirCnc.json)
+
 ### Pré-requisitos
 
 ```bash
