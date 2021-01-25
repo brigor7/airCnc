@@ -48,4 +48,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 \* Para mais detalhes, veja o <kbd>[package.json](./package.json)</kbd> e os códigos do [backend](https://github.com/brigor7/airCnc/tree/master/backend), [frontend](https://github.com/brigor7/airCnc/tree/master/frontend) e [mobile](https://github.com/brigor7/airCnc/tree/master/mobile)
 
+### Insomnia
+
+[![{Executar endpoints in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=AirCnc%20API&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fbrigor7%2FairCnc%2Fmaster%2Fbackend%2Fsrc%2Fassets%2FInsomnia_AirCnc.json)
+
+## Artigos
+
+[Upload com multer](https://www.notion.so/Upload-com-multer-032164158bcb4c0a9acc90ed9db08c13)
+[Criando um apk - android](https://www.notion.so/Criando-um-arquivo-APK-android-usando-o-expo-io-f90757e8057b41e7bb4f3d1aed3344e1)
+[NodeJs - Criando uma aplicação](https://www.notion.so/NodeJs-Criando-uma-aplica-o-5c12f27beccb45809babd077ec81725c)
+
 ---
