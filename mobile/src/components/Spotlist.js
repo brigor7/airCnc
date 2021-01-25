@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text } from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  FlatList,
+  Image,
+  TouchableOpacity,
+} from 'react-native';
 import api from './../services/api';
 
 export default function Spotlist({ tech }) {
@@ -7,16 +14,90 @@ export default function Spotlist({ tech }) {
 
   useEffect(() => {
     async function loadSpots() {
-      const response = await api.get('spots', {
+      const response = await api.get('/spots', {
         params: { tech },
       });
-      console.log(response.data);
+      setSpots(response.data);
     }
+
+    loadSpots();
   }, []);
 
   return (
-    <View>
-      <Text>Tecnologia: {tech}</Text>
+    <View style={styles.container}>
+      <Text style={styles.title}>
+        Empresas que usam:
+        <Text style={styles.negrito}>{tech}</Text>
+      </Text>
+      <FlatList
+        style={styles.list}
+        data={spots}
+        keyExtractor={(spot) => spot.id}
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        renderItem={({ item }) => (
+          <View style={styles.listItem}>
+            <Image
+              style={styles.thumbnail}
+              source={{ uri: item.thumbnail_url }}
+            />
+            <Text style={styles.company}>{item.company}</Text>
+            <Text style={styles.price}>
+              {item.price ? `R$ ${item.price}/dia` : 'GRATUITO'}
+            </Text>
+            <TouchableOpacity onPress={() => {}}>
+              <Text style="styles.buttonText">Solicitar Reserva</Text>
+            </TouchableOpacity>
+          </View>
+        )}
+      />
     </View>
   );
 }
+const styles = StyleSheet.create({
+  container: {
+    marginTop: 30,
+  },
+  title: {
+    fontSize: 20,
+    color: '#444',
+    paddingHorizontal: 20,
+    marginBottom: 15,
+    backgroundColor: '#eee',
+  },
+  negrito: { fontWeight: 'bold' },
+  list: {},
+  buttonText: {},
+  company: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#333',
+    marginTop: 10,
+  },
+  listItem: { marginRight: 15 },
+  thumbnail: {
+    width: 200,
+    height: 120,
+    resizeMode: 'cover',
+    borderRadius: 5,
+    backgroundColor: '#e54233',
+  },
+  price: {
+    fontSize: 15,
+    color: '#999',
+    marginTop: 5,
+  },
+  button: {
+    height: 32,
+    backgroundColor: '#f05a5b',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+    marginTop: 15,
+  },
+  buttonText: {
+    color: '#fff',
+    fontWeight: 'bold',
+    fontSize: 15,
+  },
+});
