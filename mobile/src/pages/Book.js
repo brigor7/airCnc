@@ -12,14 +12,18 @@ import api from '../services/api';
 
 export default function Book({ navigation }) {
   const spot_id = navigation.getParam('id');
-  const [date, setDate] = useState('');
+  const [data, setData] = useState('');
 
   async function handleSubmit() {
     const user_id = await AsyncStorage.getItem('user');
-    console.log('user_id: ' + user_id);
-    await api.post(`spot/${spot_id}/booking`, date, {
-      headers: { user_id },
-    });
+
+    await api.post(
+      `/spot/${spot_id}/booking`,
+      { data },
+      {
+        headers: { user_id },
+      }
+    );
     Alert.alert('Solicitação de reserva enviada!');
     navigation.navigate('List');
   }
@@ -38,8 +42,8 @@ export default function Book({ navigation }) {
         autoCapitalize="words"
         autoCorrect={true}
         keyboardType="default"
-        value={date}
-        onChangeText={setDate}
+        value={data}
+        onChangeText={setData}
       />
       <TouchableOpacity style={styles.button} onPress={handleSubmit}>
         <Text>Solicitar reserva</Text>
